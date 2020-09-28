@@ -1,4 +1,4 @@
-import threading #병렬 처리
+import threading
 import DobotDllType as dType
 
 # Condition String
@@ -21,7 +21,7 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
     #Async Motion Params Setting
     dType.SetHOMEParams(api, 200, 110, 65, 50, isQueued = 1)
      
-    # 속도 
+    # Velocity and Acc 
     dType.SetPTPJointParams(api, 200, 200, 200, 200, 200, 200, 200, 200, isQueued = 1)
     dType.SetPTPCommonParams(api, 200, 200, isQueued = 1) 
 
