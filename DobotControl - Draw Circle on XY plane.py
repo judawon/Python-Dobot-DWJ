@@ -1,4 +1,4 @@
-import threading #병렬 처리
+import threading
 import DobotDllType as dType
 import math
 
@@ -24,7 +24,7 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
     dType.SetHOMEParams(api, 200, 110, 65, 50,isQueued = 1)
     
 
-    # 속도 
+    # Velocity & Acc
     dType.SetPTPJointParams(api, 200, 200, 200, 200, 200, 200, 200, 200, isQueued = 1)
 
     #Async Home
@@ -32,7 +32,7 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
     dType.SetPTPCommonParams(api, 100, 100, isQueued = 1)
    
     #Draw Circle :
-    #dType.SetCircleCmd(api, 200,200,100,200, isQueued = 1)
+    #dType.SetCircleCmd(api, 200,200,100,200, isQueued = 1) #What is this...? doesn't understand yet
 
     steps = 24
     scale = 50
