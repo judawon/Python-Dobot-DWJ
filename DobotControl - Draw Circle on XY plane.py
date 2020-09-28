@@ -23,7 +23,6 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
     # Async Motion Params Setting
     dType.SetHOMEParams(api, 200, 110, 65, 50,isQueued = 1)
     
-
     # Velocity & Acc
     dType.SetPTPJointParams(api, 200, 200, 200, 200, 200, 200, 200, 200, isQueued = 1)
 
@@ -53,6 +52,3 @@ if (state == dType.DobotConnect.DobotConnect_NoError):
 
 #Disconnect Dobot
 dType.DisconnectDobot(api)
-
-    
-    
